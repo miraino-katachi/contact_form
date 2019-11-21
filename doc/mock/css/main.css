@@ -1,0 +1,96 @@
+@charset "utf-8";
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'YuGothic', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 10px auto 20px auto;
+    text-align: left;
+}
+
+.required {
+    display: inline-box;
+    color: white;
+    background-color: red;
+    font-weight: normal;
+    font-size: 10pt;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.input_name {
+    display: inline-box;
+    float: left;
+    padding: 4px;
+}
+
+.input_required {
+    float: right;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #afafaf;
+    padding: 5px;
+    vertical-align: top;
+}
+
+th {
+    background-color: #fafafa;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    margin: 0 0 0 2px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    padding: 5px;
+    margin: 2px;
+}
+
+input[type="submit"], button {
+    padding: 10px 30px;
+}
+
+button#search {
+    padding: 5px 5px;
+}
+
+select {
+    height: 2em;
+}
+
+.name {
+    width: 300px;
+}
+
+.postal {
+    width: 7em;
+}
+
+.address {
+    width: 500px;
+}
+
+.email {
+    width: 500px;
+}
+
+textarea {
+    width: 500px;
+    height: 7em;
+}
