@@ -4,7 +4,8 @@ session_start();
 session_regenerate_id(true);
 
 // ワンタイムトークンを生成してセッションに保存（CSRF対策）
-$token = bin2hex(openssl_random_pseudo_bytes(2048));
+// https://www.php.net/manual/ja/function.openssl-random-pseudo-bytes.php
+$token = bin2hex(openssl_random_pseudo_bytes(16));
 $_SESSION['token'] = $token;
 
 // 都道府県のリスト
