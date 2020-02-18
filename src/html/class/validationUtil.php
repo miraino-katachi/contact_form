@@ -3,7 +3,7 @@
 /**
  * バリデーションクラスです。
  */
-class validationUtil
+class ValidationUtil
 {
     /**
      * 名前の妥当性をチェックします。

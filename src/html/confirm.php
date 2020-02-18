@@ -1,6 +1,6 @@
 <?php
 // クラスの読み込み
-require_once('./class/validationUtil.php');
+require_once('./class/ValidationUtil.php');
 
 // セッションスタート
 session_start();
@@ -29,28 +29,28 @@ $_SESSION['post'] = $post;
 $validityCheck = array();
 
 // 名前のバリデーション
-$validityCheck[] = validationUtil::isValidName($post['name'], $_SESSION['err_msg']['name']);
+$validityCheck[] = ValidationUtil::isValidName($post['name'], $_SESSION['err_msg']['name']);
 
 // 郵便番号のバリデーション
-$validityCheck[] = validationUtil::isValidPostalCode($post['postal_code'], $_SESSION['err_msg']['postal_code']);
+$validityCheck[] = ValidationUtil::isValidPostalCode($post['postal_code'], $_SESSION['err_msg']['postal_code']);
 
 // 都道府県のバリデーション
-$validityCheck[] = validationUtil::isValidPref($post['pref'], $_SESSION['err_msg']['pref']);
+$validityCheck[] = ValidationUtil::isValidPref($post['pref'], $_SESSION['err_msg']['pref']);
 
 // 市区町村のバリデーション
-$validityCheck[] = validationUtil::isValidAddress1($post['address1'], $_SESSION['err_msg']['address1']);
+$validityCheck[] = ValidationUtil::isValidAddress1($post['address1'], $_SESSION['err_msg']['address1']);
 
 // 町名番地等のバリデーション
-$validityCheck[] = validationUtil::isValidAddress2($post['address2'], $_SESSION['err_msg']['address2']);
+$validityCheck[] = ValidationUtil::isValidAddress2($post['address2'], $_SESSION['err_msg']['address2']);
 
 // メールアドレスのバリデーション
-$validityCheck[] = validationUtil::isValidEmail($post['email'], $_SESSION['err_msg']['email']);
+$validityCheck[] = ValidationUtil::isValidEmail($post['email'], $_SESSION['err_msg']['email']);
 
 // 電話番号のバリデーション
-$validityCheck[] = validationUtil::isValidPhoneNumber($post['phone_number'], $_SESSION['err_msg']['phone_number']);
+$validityCheck[] = ValidationUtil::isValidPhoneNumber($post['phone_number'], $_SESSION['err_msg']['phone_number']);
 
 // お問い合わせ内容のバリデーション
-$validityCheck[] = validationUtil::isValidContact($post['contact'], $_SESSION['err_msg']['contact']);
+$validityCheck[] = ValidationUtil::isValidContact($post['contact'], $_SESSION['err_msg']['contact']);
 
 // バリデーションで不備があった場合
 foreach ($validityCheck as $k => $v) {
