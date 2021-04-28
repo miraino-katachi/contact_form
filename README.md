@@ -1,5 +1,6 @@
-# contact_form
-【PHP】お問い合わせフォーム
+# 【PHP】お問い合わせフォーム
+
+https://demo.miraino-katachi.com/contact_form/
 
 入力フォームを作成します。下記のことを練習できます。
 - フォームから入力した値の受け取り
